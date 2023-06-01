@@ -20,9 +20,9 @@
                 android:id="@+id/logo_joke"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginStart="10dp"
-                android:layout_centerVertical="true"
                 android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
                 android:contentDescription="@null"
                 android:src="@drawable/h" />
 
@@ -52,10 +52,10 @@
                 android:id="@+id/logo_flower"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginStart="5dp"
-                android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
                 android:contentDescription="@null"
                 android:src="@drawable/laugh" />
 
@@ -78,7 +78,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                tools:text="A joke a day keeps the doctor away" />
+                tools:text="@string/title_joke_text" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/sub_title_joke"
@@ -88,15 +88,15 @@
                 android:text="@string/sub_title_joke_text"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                tools:text="If you joke wrong way, your teeth have to pay. (Serious) " />
+                tools:text="@string/sub_title_joke_text" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
             android:textAlignment="textStart"
             app:constraint_referenced_ids="banner"
             app:layout_constraintBottom_toTopOf="@id/guideline_1"
@@ -149,7 +149,7 @@
         <View
             android:id="@+id/line_start"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0.5dp"
             android:layout_gravity="bottom"
             android:background="@color/gray_80"
             app:layout_constraintBottom_toTopOf="@id/describe"
@@ -172,18 +172,9 @@
             android:text="@string/copyright_text"
             android:textAlignment="center"
             app:constraint_referenced_ids="banner"
-            app:layout_constraintBottom_toBottomOf="@id/line_end"
-            app:layout_constraintTop_toBottomOf="@id/describe"
-            tools:text="Copyright 2021 HLS" />
-
-        <View
-            android:id="@+id/line_end"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_gravity="bottom"
-            android:background="@color/gray_80"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/copyright" />
+            app:layout_constraintTop_toBottomOf="@id/describe"
+            tools:text="@string/copyright_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
