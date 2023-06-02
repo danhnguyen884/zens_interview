@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Interview</string>
     <string name="btn_like_text">This is funny!</string>
-    <string name="btn_dislike_text">This is not funny</string>
+    <string name="btn_dislike_text">This is not funny.</string>
     <string name="describe_text">This appis created as part of Hl solutions program. The materials contained on this website are provided for general information only and do not constitute any form of advice. HLS assumes no responsibility for the accuracy of any particular statement and accepts no liability for any loss or damage which may arise from reliance on the information contained on this site.</string>
     <string name="content_text">A child asked his father, "How were people born?" So his father said, "Adam and Eve made babies, then their babies became adults and made babies, and so on."
         The child then went to his mother, asked her the same question and she told him, "We were monkeys then we evolved to become like we are now."
