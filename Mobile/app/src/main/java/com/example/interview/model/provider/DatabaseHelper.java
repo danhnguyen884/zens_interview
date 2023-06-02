@@ -47,7 +47,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public void addContent(ContentJoke content) {
+    public void addContentJoke(ContentJoke content) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -65,7 +65,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     // code to get all contents in a list view
-    public List<ContentJoke> getAllContents() {
+    public List<ContentJoke> getAllContentsJoke() {
         List<ContentJoke> contentList = new ArrayList<ContentJoke>();
         // Select All Query
         String selectQuery = "SELECT * FROM " + TABLE_CONTENT_S;
@@ -90,7 +90,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     // code to update the single content
-    public int updateContent(ContentJoke content) {
+    public int updateContentJoke(ContentJoke content) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();

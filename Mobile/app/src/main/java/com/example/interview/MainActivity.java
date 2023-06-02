@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         db.clearDatabase();
 
         initHardData(db);
-        List<ContentJoke> contents = db.getAllContents();
+        List<ContentJoke> contents = db.getAllContentsJoke();
         contentTv.setText(contents.get(idCurrent).getContentText());
 
         onPressBtnLike(contents, db);
@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void initHardData(DatabaseHelper db) {
-        db.addContent(new ContentJoke(Constants.contentText, 0, 0));
-        db.addContent(new ContentJoke(Constants.contentTextOther, 0, 0));
-        db.addContent(new ContentJoke(Constants.contentTextOtherA, 0, 0));
-        db.addContent(new ContentJoke(Constants.contentTextOtherB, 0, 0));
+        db.addContentJoke(new ContentJoke(Constants.contentText, 0, 0));
+        db.addContentJoke(new ContentJoke(Constants.contentTextOther, 0, 0));
+        db.addContentJoke(new ContentJoke(Constants.contentTextOtherA, 0, 0));
+        db.addContentJoke(new ContentJoke(Constants.contentTextOtherB, 0, 0));
     }
 
     void onPressBtnLike(List<ContentJoke> contents, DatabaseHelper db) {
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     contentTv.setText(contents.get(c.getId()).getContentText());
                     c.setIsLike(1);
                     c.setIsRead(1);
-                    db.updateContent(c);
+                    db.updateContentJoke(c);
                     break;
                 } else {
                     contentTv.setText(Constants.contentTextOver);
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                     contentTv.setText(contents.get(c.getId()).getContentText());
                     c.setIsLike(0);
                     c.setIsRead(1);
-                    db.updateContent(c);
+                    db.updateContentJoke(c);
                     break;
                 } else {
                     contentTv.setText(Constants.contentTextOver);

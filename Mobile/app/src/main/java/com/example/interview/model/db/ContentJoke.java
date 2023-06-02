@@ -15,13 +15,6 @@ public class ContentJoke {
         this.isRead = isRead;
     }
 
-    public ContentJoke(int id, String contentText, int isLike, int isRead) {
-        this.id = id;
-        this.contentText = contentText;
-        this.isLike = isLike;
-        this.isRead = isRead;
-    }
-
     public int getId() {
         return id;
     }

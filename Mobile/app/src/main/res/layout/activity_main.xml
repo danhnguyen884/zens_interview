@@ -160,6 +160,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/describe_text"
+            android:textAlignment="center"
             app:constraint_referenced_ids="banner"
             app:layout_constraintBottom_toTopOf="@id/copyright"
             app:layout_constraintTop_toBottomOf="@id/line_start"
